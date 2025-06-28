@@ -1,0 +1,4 @@
+rootProject.name = 'JustASite'
+include 'persistence'
+include 'service'
+include 'controller'

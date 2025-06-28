@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        implementation("org.springframework.boot:spring-boot-starter:${springBootVersion}")
+    }
+}
+
+allprojects {
+    group = 'com.parakhnevich.app'
+    version = '1.0-SNAPSHOT'
+}
