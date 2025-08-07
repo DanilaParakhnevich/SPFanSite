@@ -3,10 +3,17 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 .gradle/**
+.gradle
+gradle/**
+gradle
+gradlew
+gradlew.bat
 
 ### IntelliJ IDEA ###
 .gigaide/**
+.gigaide
 .idea/**
+.idea
 *.iws
 *.iml
 *.ipr
