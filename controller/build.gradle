@@ -1,5 +1,8 @@
 dependencies {
+    implementation project(":service")
     implementation("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
-    implementation("org.postgresql:postgresql:42.7.7")
-
+    implementation("org.springframework.boot:spring-boot-starter-thymeleaf:${springBootVersion}")
+    implementation("org.postgresql:postgresql:${psqlVersion}")
+    runtimeOnly("org.flywaydb:flyway-database-postgresql:${flywayVersion}")
+    implementation("org.flywaydb:flyway-core:${flywayVersion}")
 }

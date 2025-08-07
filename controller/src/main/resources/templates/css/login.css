@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh; /* 100% of the viewport height */
+    width: 100vw;  /* 100% of the viewport width */
+}
+
+input {
+    font-size: 5em;
+}
+
+.main {
+    height: 100vh; /* 100% of the viewport height */
+    width: 100vw;  /* 100% of the viewport width */
+    background-image: url('../img/login_bg.jpg');
+    background-size: 60vw 100vh;
+}
+
+.login_form {
+    height: 100vh; /* 100% of the viewport height */
+    width: 100vw;  /* 100% of the viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
