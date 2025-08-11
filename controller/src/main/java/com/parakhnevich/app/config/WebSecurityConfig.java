@@ -28,8 +28,8 @@ public class WebSecurityConfig {
                         .permitAll()
                 )
                 .authorizeHttpRequests((requests) -> requests
-                        .requestMatchers("/user/**", "/", "/resources/**", "/css/**", "/templates/**", "/js/**", "/img/**", "/home").permitAll()
-                        .requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
+                        .requestMatchers("/user/**", "/resources/**", "/css/**", "/templates/**", "/js/**", "/img/**").permitAll()
+                        .requestMatchers("/register", "/getMessage").permitAll()
                         .anyRequest().authenticated()
                 )
                 .logout(form -> form

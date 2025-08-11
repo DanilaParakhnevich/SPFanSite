@@ -4,7 +4,7 @@
 
 -- DROP TABLE public."user";
 
-CREATE TABLE public."user" (
+CREATE TABLE IF NOT EXISTS public."user" (
 	id bigserial NOT NULL, -- Идентификатор
 	username varchar(50) NULL, -- Имя пользователя
 	"password" varchar(72) NULL, -- Пароль (BCrypt)

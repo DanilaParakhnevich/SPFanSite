@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Register Page</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/register.js"></script>
+    <link rel="icon" href="img/eric.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main">
+        <div class="login_form">
+            <form method="post" th:action="@{/process-login}">
+                <div class="login_container">
+                    <input class="username_input" name="username" placeholder="Username" type="text" />
+                    <input class="password_input" name="password" placeholder="Password" type="password" />
+                    <!-- <input class="mail_input" name="email" placeholder="Input mail" type="email" /> -->
+                    <div class="login_button_container">
+                        <a class="button_input" onclick="send_mail()">Continue</a>
+                    </div>
+                    <div class="error_register_placeholder"></div>
+                </div>
+            </form>
+        </div>
+        <div class="popup_form">
+            <div class="popup" id="popup">
+                <input class="mail_code_input" name="username" placeholder="Username" type="text" />
+                <a class="button_input" onclick="myFunction()">Continue</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

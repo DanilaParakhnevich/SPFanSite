@@ -20,6 +20,25 @@ a {
     text-decoration: none;
 }
 
+.error_register_placeholder {
+    font-size: 3vw;
+    font-family: 'sp';
+    text-decoration: none;
+    color: #EE324B;
+
+    width: 30vw;
+    align-self: center;
+    border: 2px solid transparent;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    padding-top: 0.1em;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
 .main {
     height: 100vh;
     /* 100% of the viewport height */
@@ -42,12 +61,21 @@ a {
     right: 0;
 
     margin: auto;
+}
 
-    /* height: 100vh;
-    width: 100vw; 
-    display: flex;
-    justify-content: center;
-    align-items: center; */
+.popup_form {
+    width: 40vw;
+    height: 30vh;
+    
+    border: 1px solid black;
+
+    position: absolute;
+    top: -50vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
 }
 
 .login_container {
@@ -71,6 +99,20 @@ a {
 }
 
 .password_input {
+    width: 30vw;
+    align-self: center;
+    border: 2px solid transparent;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    padding-top: 0.1em;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.mail_input {
     width: 30vw;
     align-self: center;
     border: 2px solid transparent;
@@ -111,7 +153,7 @@ a {
 
 .username_input:hover,
 .username_input:focus {
-  border: 4px solid #EE3253;
+  border: 4px solid #EE324B;
   box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
 }
 
@@ -121,8 +163,33 @@ a {
   box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
 }
 
-.button_input:hover,
-.button_input:focus {
+.mail_input:hover,
+.mail_input:focus {
   border: 4px solid #FFEBC0;
   box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+}
+
+
+.button_input:hover,
+.button_input:focus {
+  border: 4px solid #DF8A7A;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+}
+
+/* The actual popup (appears on top) */
+.popup {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
